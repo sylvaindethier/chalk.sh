@@ -1,16 +1,22 @@
 # :crayon::computer: chalk.sh [![Build Status](https://travis-ci.org/sylvaindethier/chalk.sh.svg?branch=master)](https://travis-ci.org/sylvaindethier/chalk.sh)
 
-> <quote>Terminal string styling done right</quote>
+> <quote>Terminal string styling done right</quote> -- with bash
 
 
 ## Install
 
-Have a local copy by either:
-  * Clone: `git clone https://github.com/sylvaindethier/chalk.sh.git`
-  * Add as submodule: `git add submodule https://github.com/sylvaindethier/chalk.sh.git`
-  * [Download](https://github.com/sylvaindethier/chalk.sh/archive/master.zip) and unzip
+Get a local copy by either:
+- Add as submodule:
+  ```bash
+    $ git submodule add https://github.com/sylvaindethier/chalk.sh.git
+  ```
+- Clone:
+  ```bash
+    $ git clone https://github.com/sylvaindethier/chalk.sh.git
+  ```
+- Download the [ZIP archive](https://github.com/sylvaindethier/chalk.sh/archive/master.zip) and unzip
 
-Then source the `cli.sh` script
+Then source the `chalk.sh/cli.sh` script:
 ```bash
 $ source path/to/chalk.sh/cli.sh
 ```
@@ -18,8 +24,9 @@ $ source path/to/chalk.sh/cli.sh
 
 ## Usage
 
-> Make sure `cli.sh` script is sourced before running `chalk`
 > `chalk.sh` provides exactly the same CLI usage as [`chalk-cli`](https://github.com/chalk/chalk-cli)
+
+Make sure to source the `chalk.sh/cli.sh` script before running `chalk`
 
 ```bash
 $ chalk --help
@@ -37,7 +44,7 @@ $ chalk --help
     $ chalk -t '{red.bold Dungeons and Dragons {~bold.blue (with added fairies)}}'
 ```
 
-See [chalk supported styles](https://github.com/chalk/chalk#styles).
+See [`chalk` supported styles](https://github.com/chalk/chalk#styles)
 
 
 ## Template syntax
